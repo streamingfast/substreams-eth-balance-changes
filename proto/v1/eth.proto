@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package eth.types.v1;
+
+message BalanceChanges {
+  repeated BalanceChange balance_changes = 1;
+}
+
+message BalanceChange {
+  string address = 1;
+  string old_value = 2;
+  string new_value = 3;
+  string reason = 4;
+  uint64 ordinal = 5;
+
+  string transaction = 6; //if the change is done in a transaction
+}

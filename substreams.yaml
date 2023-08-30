@@ -1,0 +1,28 @@
+specVersion: v0.1.0
+package:
+  name: eth_balance_changes
+  version: v0.0.1
+  url: https://github.com/streamingfast/substreams-eth-balance-changes
+  doc:
+
+binaries:
+  default:
+    type: wasm/rust-v1
+    file: target/wasm32-unknown-unknown/release/eth.wasm
+
+protobuf:
+  files:
+    - eth.proto
+  importPaths:
+    - ./proto/v1
+
+modules:
+  - name: map_balance_changes
+    kind: map
+    doc: Extracts Ethereum balance changes
+    initialBlock: 0
+    inputs:
+      - source: sf.ethereum.type.v2.Block
+    output:
+      type: proto:eth.types.v1.BalanceChanges
+
