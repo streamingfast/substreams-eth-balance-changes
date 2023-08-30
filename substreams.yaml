@@ -1,7 +1,7 @@
 specVersion: v0.1.0
 package:
   name: eth_balance_changes
-  version: v0.0.1
+  version: v0.0.2
   url: https://github.com/streamingfast/substreams-eth-balance-changes
   doc:
 
