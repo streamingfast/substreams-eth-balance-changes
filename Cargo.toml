@@ -21,8 +21,3 @@ num-bigint = "0.4"
 substreams = "0.5"
 substreams-ethereum = "0.9"
 num-traits = "0.2.16"
-
-[build-dependencies]
-prost-build = "0.11"
-anyhow = "1"
-substreams-ethereum = "0.9"

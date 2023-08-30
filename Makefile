@@ -28,9 +28,9 @@ info:
 
 .PHONY: run
 run: build
-	substreams run substreams.yaml map_balance_changes -e mainnet.eth.streamingfast.io:443
+	substreams run substreams.yaml map_balance_changes -e mainnet.eth.streamingfast.io:443 --production-mode
 
 .PHONY: gui
 gui: build
-	substreams gui substreams.yaml map_balance_changes -e mainnet.eth.streamingfast.io:443
+	substreams gui substreams.yaml map_balance_changes -e mainnet.eth.streamingfast.io:443 --production-mode
 

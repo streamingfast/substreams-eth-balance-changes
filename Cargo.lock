@@ -176,16 +176,14 @@ dependencies = [
 
 [[package]]
 name = "eth"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
- "anyhow",
  "ethabi 18.0.0",
  "hex",
  "hex-literal",
  "num-bigint",
  "num-traits",
  "prost",
- "prost-build",
  "prost-types",
  "substreams",
  "substreams-ethereum",
