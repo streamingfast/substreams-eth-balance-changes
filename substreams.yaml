@@ -3,7 +3,9 @@ package:
   name: eth_balance_changes
   version: v0.0.2
   url: https://github.com/streamingfast/substreams-eth-balance-changes
-  doc:
+  image: logo.png
+  doc: |
+    This Substreams extracts all native ETH transfers from Ethereum events for the full chain.
 
 binaries:
   default:
