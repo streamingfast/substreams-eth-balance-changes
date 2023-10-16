@@ -176,7 +176,7 @@ dependencies = [
 
 [[package]]
 name = "eth"
-version = "0.0.2"
+version = "1.0.0"
 dependencies = [
  "ethabi 18.0.0",
  "hex",
